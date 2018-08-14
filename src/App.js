@@ -43,9 +43,31 @@ class App extends Component {
           </div>
         </div>
 
-// bottom of splash container
+    {/* bottom splash  DIV  */}
+
+<div id='bottom-splash'>
+
+<img id='pour-mug' src={require('./assets/images/pour-mug.jpg')}/>
+
+<div id='pour-mug-text'> 
+<div>
+<img className='pour-mug-article-icon' src={require('./assets/images/icons/Article.svg')}/>
+</div>
+
+<p className='date'> NOVEMBER 20 </p>
+<p className='article-title'> Too Much Flavor For Four <br/> Walls To Hold</p>
+<p className='article-blurb'>There are only so many hours in a day, so we make every 
+  <br/> glass count. We craft full-flavored whiskey for those who find 
+  <br/> a way to get the most out of every minute of every day ...
+</p>
+
+<label className='article-readmore'> Read More </label>
+</div> 
 
 
+
+
+  </div>
 
 
 
