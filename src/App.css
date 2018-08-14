@@ -1,28 +1,109 @@
-.App {
+.main-div{
+  opacity:0.8;
+  background-color:#ccc;
+  position:fixed;
+  width:100%;
+  /* height:100%; */
+  top:0px;
+  left:0px;
+  z-index:1000;
+  font-family:'Open Sans', sans-serif;
+}
+
+
+#sponsored {
+  width:100%;
+  height:22px;
   text-align: center;
+  background: #B5A484;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#header{
+  width:100%%;
+  height:50px;
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-left:60px;
+  padding-right: 60px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+#header-knob-creek-icon{
+  height:40px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#header-center-logo{
+  color:#B5A484;
+  border:2px solid;
+  padding:10px;
+  padding-left:25px;
+  padding-right:25px;
+  
 }
 
-.App-title {
-  font-size: 1.5em;
+#header-social-media-icon{
+  color:#B5A484;
 }
 
-.App-intro {
-  font-size: large;
+.fa-2x {
+  font-size: 2em;
+  padding-left: 20px;
+  padding-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#splash-page-container{
+  width:100%;
+  height:1000px;
+  background-image: url('./assets/images/www.knobcreek.com-1293609732325191.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-color: #B5A484;
+
+
+
+}
+#splash-page{
+  padding: 50px;
+    padding-left: 12%;
+    padding-right: 12%;
+    width: 90%;
+    height: 500px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#splash-page-bio{
+  color:white;
+  width: 50%;
+  height: 75%;
+  padding:0;
+  margin:0;
+  float: left;
+
+}
+#bio-header{
+  font-size: 72px;
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+#bio-blurb{
+  font-size:16px;
+ font-weight: 300;
+ margin-top:0px;
+
+}
+
+#splash-page-bourbon-bottle{
+  width: 35%;
+  height: 100%;
+}
+
+#splash-resize-bottle{
+  width:920px;
+
+
 }
