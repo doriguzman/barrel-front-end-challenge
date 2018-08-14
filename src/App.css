@@ -57,7 +57,7 @@
 
 #splash-page-container{
   width:100%;
-  height:1000px;
+  height:1260px;
   background-image: url('./assets/images/www.knobcreek.com-1293609732325191.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -100,6 +100,7 @@
 
 #splash-page-bourbon-bottle{
   width: 35%;
+  z-index: 1;
 }
 
 #splash-resize-bottle{
@@ -111,8 +112,8 @@
 
 #bottom-splash{
   margin-top: -1%;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 5%;
+  padding-right: 5%;
   width: 90%;
   height: 100%;
   display:flex;
@@ -120,18 +121,22 @@
 }
 
 #pour-mug{
-  width: 49%;
-  height: 63%;
-  margin-top:-30% 0;
-    /* clip: rect(10px,100px,200px,0px); */
+  margin-top: -77px;
+  width: 45%;
+  height: 685px;
+  position: absolute;
+  clip: rect(78px, 1600px, 1700px, 0px);
 }
 
 #pour-mug-text{
+  margin-top:1px;
 background-color: white;
 color:black;
-height:500px;
+height:607px;
 width:49%;
 text-align: center;
+z-index: 2;
+margin-left: 50%;
 
 }
 
@@ -139,7 +144,7 @@ text-align: center;
   width:35px;
   height:35px;
   color: #932525;
-  margin-top:17%;
+  margin-top:25%;
 
 }
 
@@ -161,6 +166,7 @@ font-weight: bold;
 .article-blurb{
   font-size:16px;
   font-weight:lighter;
+  padding-bottom:5px;
 
 }
 .article-readmore{
@@ -171,4 +177,17 @@ font-weight: bold;
 
 
 
+}
+
+#recent-articles-container{
+  width:100%;
+  background-color: white;
+  margin-top:-10px;
+  padding:50px;
+  text-align:center;
+
+}
+#recent-articles-heading{
+  font-size:35px;
+  margin: 10px;
 }
