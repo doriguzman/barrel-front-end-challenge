@@ -1,0 +1,46 @@
+#articles-container{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap
+}
+
+.article-card{
+    width:30%;
+    height:500px;
+}
+
+img{
+    height:300px;
+}
+
+.article-blurb{
+    margin-top:0
+}
+
+.article-icon{
+    width:35px;
+    height:30px;
+    color: #932525;
+    border-radius:30px;
+    margin-top:-30px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+    background-color:white;
+}
+
+.article-icon-gallery{
+    width:35px;
+    height:16px;
+    color: #932525;
+    border-radius:100px;
+    margin-top:-30px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+    background-color:white;
+}

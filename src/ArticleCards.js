@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./ArticleCards.css"
 class ArticleCards extends Component {
   render() {
     let articles = this.props.articles;
@@ -17,11 +17,13 @@ class ArticleCards extends Component {
                <div key={article.number} className= 'article-card'>
 
                <img src={require(`./assets/images/${article.image}`)} alt='img'/>
-               <div className='article-icon'>
+               <div className='article-blurb'>
+               { article.icon==='Gallery.svg'? <img className='article-icon-gallery' src={require(`./assets/images/icons/${article.icon}`)}
+                /> :
                <img
-                  className="pour-mug-article-icon"
+                  className="article-icon"
                   src={require(`./assets/images/icons/${article.icon}`)}
-                />
+                />}
                 </div>
                 <p className="date"> {article.date} </p>
                 <p className="article-title"> {article.title}</p>

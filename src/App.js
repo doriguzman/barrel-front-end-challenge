@@ -89,12 +89,12 @@ class App extends Component{
             <img id="pour-mug" src={require("./assets/images/pour-mug.jpg")} />
 
             <div id="pour-mug-text">
-              <div>
+              
                 <img
                   className="pour-mug-article-icon"
                   src={require("./assets/images/icons/Article.svg")}
                 />
-              </div>
+             
 
               <p className="date"> NOVEMBER 20 </p>
               <p className="article-title">
@@ -110,6 +110,7 @@ class App extends Component{
               </p>
 
               <label className="article-readmore"> Read More </label>
+              
             </div>
           </div>
         </div>
