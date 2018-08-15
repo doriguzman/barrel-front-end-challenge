@@ -1,35 +1,91 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import ArticleCards from './ArticleCards'
+import ArticleCards from "./ArticleCards";
 
-class App extends Component{
-  constructor(){
+class App extends Component {
+  constructor() {
     super();
-    this.state={
-      obj:[{ number:1, image: 'www.knobcreek.com-1550031134660845.jpg', icon:'Article.svg', date:'NOVEMBER 10', title:'This Creek Run Full, Making Every Glass Count', continue:'Read More'},
-      { number:2, image: 'www.knobcreek.com-1564585437648699.jpg', icon:'Video.svg', date:'NOVEMBER 1', title:`Celebrating Knob Creek's 25th Anniversary`, continue:'Watch Video '},
-      { number:3, image: 'www.knobcreek.com-1550246487292757.jpg', icon:'Glass.svg', date:'OCTOBER 30', title:`The Single Barrel Experience`, continue:'Read More '},
-      { number:4, image: 'www.knobcreek.com-1550164189475220.jpg', icon:'Video.svg', date:'OCTOBER 20', title:`Make No Small Plans. Drink No Small Bourbon`, continue:'Watch Video'},
-      { number:5, image: 'www.knobcreek.com-1550293000153014.jpg', icon:'Article.svg', date:'OCTOBER 10', title:`There's No Faking Flavor: It Has To Be Earned`, continue:'Read Video'},
-      { number:6, image: 'www.knobcreek.com-1550664938574687.jpg', icon:'Gallery.svg', date:'OCTOBER 05', title:`Learn about Pre-Prohibition Style Whiskey`, continue:'View Gallery '},
-      { number:7, image: 'www.knobcreek.com-1550653084056276.jpg', icon:'Article.svg', date:'SEPTEMBER 30', title:`About Our Master Distiller Booker Noe`, continue:'Read More '},
-      { number:8, image: 'www.knobcreek.com-1550660375610157.jpg', icon:'Glass.svg', date:'SEPTEMBER 18', title:`About Our Master Distiller Booker Noe`, continue:'Read More '},
-      { number:9, image: 'www.knobcreek.com-1550319714280280.jpg', icon:'Gallery.svg', date:'SEPTEMBER 10', title:`Unmistakeable Richness and Signiture Sweetness`, continue:'View Gallery '},
+    this.state = {
+      obj: [
+        {
+          number: 1,
+          image: "www.knobcreek.com-1550031134660845.jpg",
+          icon: "Article.svg",
+          date: "NOVEMBER 10",
+          title: "This Creek Run Full, Making Every Glass Count",
+          continue: "Read More"
+        },
+        {
+          number: 2,
+          image: "www.knobcreek.com-1564585437648699.jpg",
+          icon: "Video.svg",
+          date: "NOVEMBER 1",
+          title: `Celebrating Knob Creek's 25th Anniversary`,
+          continue: "Watch Video"
+        },
+        {
+          number: 3,
+          image: "www.knobcreek.com-1550246487292757.jpg",
+          icon: "Glass.svg",
+          date: "OCTOBER 30",
+          title: `The Single Barrel Experience`,
+          continue: "Read More "
+        },
+        {
+          number: 4,
+          image: "www.knobcreek.com-1550164189475220.jpg",
+          icon: "Video.svg",
+          date: "OCTOBER 20",
+          title: `Make No Small Plans. Drink No Small Bourbon`,
+          continue: "Watch Video"
+        },
+        {
+          number: 5,
+          image: "www.knobcreek.com-1550293000153014.jpg",
+          icon: "Article.svg",
+          date: "OCTOBER 10",
+          title: `There's No Faking Flavor: It Has To Be Earned`,
+          continue: "Read Video"
+        },
+        {
+          number: 6,
+          image: "www.knobcreek.com-1550664938574687.jpg",
+          icon: "Gallery.svg",
+          date: "OCTOBER 05",
+          title: `Learn about Pre-Prohibition Style Whiskey`,
+          continue: "View Gallery"
+        },
+        {
+          number: 7,
+          image: "www.knobcreek.com-1550653084056276.jpg",
+          icon: "Article.svg",
+          date: "SEPTEMBER 30",
+          title: `About Our Master Distiller Booker Noe`,
+          continue: "Read More"
+        },
+        {
+          number: 8,
+          image: "www.knobcreek.com-1550660375610157.jpg",
+          icon: "Glass.svg",
+          date: "SEPTEMBER 18",
+          title: `About Our Master Distiller Booker Noe`,
+          continue: "Read More"
+        },
+        {
+          number: 9,
+          image: "www.knobcreek.com-1550319714280280.jpg",
+          icon: "Gallery.svg",
+          date: "SEPTEMBER 10",
+          title: `Unmistakeable Richness and Signature Sweetness`,
+          continue: "View Gallery"
+        }
+      ]
+    };
+  }
 
-
-
-
-
-
-
-    ]
-
-      }
-    }
-  
   render() {
-    const {obj}= this.state
+    const { obj } = this.state;
     return (
       <div className="main-div">
         <div id="sponsored"> Sponsored By </div>
@@ -37,7 +93,7 @@ class App extends Component{
         {/* HEADER  */}
         <div id="header">
           <img
-            id="header-knob-creek-icon"
+            className="knob-creek-icon"
             src={require("./assets/images/logos/knobcreek.svg")}
           />
 
@@ -89,12 +145,10 @@ class App extends Component{
             <img id="pour-mug" src={require("./assets/images/pour-mug.jpg")} />
 
             <div id="pour-mug-text">
-              
-                <img
-                  className="pour-mug-article-icon"
-                  src={require("./assets/images/icons/Article.svg")}
-                />
-             
+              <img
+                className="pour-mug-article-icon"
+                src={require("./assets/images/icons/Article.svg")}
+              />
 
               <p className="date"> NOVEMBER 20 </p>
               <p className="article-title">
@@ -110,19 +164,36 @@ class App extends Component{
               </p>
 
               <label className="article-readmore"> Read More </label>
-              
             </div>
           </div>
         </div>
 
-  {/* bottom div */}
-  <div id = 'recent-articles-container'>
-    <p id='recent-articles-heading'> Recent Articles</p>
-    <ArticleCards articles={obj}/>
+        {/* bottom div */}
+        <div id="recent-articles-container">
+          <p id="recent-articles-heading"> Recent Articles</p>
+          <ArticleCards articles={obj} />
+        </div>
 
-
+        <div id='footer'>
+      <div id='footer-social' >
+     <div id='shareon'> SHARE ON </div>
+   <div id='footer-social-icons'>
+   {" "}
+            <img
+              className="fab fa-facebook-f fa-2x"
+              src={require("./assets/images/logos/facebook-f-brands.svg")}
+            />
+            <img
+              className="fab fa-twitter fa-2x"
+              src={require("./assets/images/logos/twitter-brands.svg")}
+            />{" "}
     </div>
-
+      </div>
+ <img
+            className="knob-creek-icon"
+            src={require("./assets/images/logos/knobcreek.svg")}
+          />
+        </div>
       </div>
     );
   }
