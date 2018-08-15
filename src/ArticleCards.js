@@ -17,18 +17,25 @@ class ArticleCards extends Component {
                <div key={article.number} className= 'article-card'>
 
                <img src={require(`./assets/images/${article.image}`)} alt='img'/>
-               <div className='article-blurb'>
+           
                { article.icon==='Gallery.svg'? <img className='article-icon-gallery' src={require(`./assets/images/icons/${article.icon}`)}
                 /> :
-               <img
+              ''}
+              {article.icon ==='Glass.svg' ?  <img
+                  className="article-icon-glass"
+                  src={require(`./assets/images/icons/${article.icon}`)}
+                />: ''}
+                {article.icon !=='Glass.svg' && article.icon !== 'Gallery.svg' ?  <img
                   className="article-icon"
                   src={require(`./assets/images/icons/${article.icon}`)}
-                />}
-                </div>
-                <p className="date"> {article.date} </p>
-                <p className="article-title"> {article.title}</p>
-                <label className="article-readmore"> {article.continue} </label>
+                />: ''}
 
+    <div className='article-blurb'>
+                    <p className="date"> {article.date} </p>
+                <p className="article-title"> {article.title}</p>
+                <br/>
+                <label className="article-readmore"> {article.continue} </label>
+                </div>
                </div>
            )
        })}

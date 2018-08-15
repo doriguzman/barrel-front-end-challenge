@@ -15,7 +15,7 @@ class App extends Component{
       { number:6, image: 'www.knobcreek.com-1550664938574687.jpg', icon:'Gallery.svg', date:'OCTOBER 05', title:`Learn about Pre-Prohibition Style Whiskey`, continue:'View Gallery '},
       { number:7, image: 'www.knobcreek.com-1550653084056276.jpg', icon:'Article.svg', date:'SEPTEMBER 30', title:`About Our Master Distiller Booker Noe`, continue:'Read More '},
       { number:8, image: 'www.knobcreek.com-1550660375610157.jpg', icon:'Glass.svg', date:'SEPTEMBER 18', title:`About Our Master Distiller Booker Noe`, continue:'Read More '},
-      { number:9, image: 'www.knobcreek.com-1550319714280280.jpg', icon:'Gallery.svg', date:'OCTOBER 05', title:`Unmistakeable Richness and Signiture Sweetness`, continue:'View Gallery '},
+      { number:9, image: 'www.knobcreek.com-1550319714280280.jpg', icon:'Gallery.svg', date:'SEPTEMBER 10', title:`Unmistakeable Richness and Signiture Sweetness`, continue:'View Gallery '},
 
 
 
