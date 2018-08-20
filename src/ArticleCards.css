@@ -1,5 +1,5 @@
 #articles-container{
-    margin-left:10px;
+    margin:auto;
     width:100%;
     display:flex;
     flex-wrap: wrap;
@@ -7,8 +7,8 @@
 }
 
 .article-card{
-    width:30%;
-    height:590px;
+    width:29%;
+    height:585px;
     margin:15px;
     background-color: #F3F1ED
 }
@@ -17,14 +17,27 @@
    color:white
 }
 
+.date {
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
 img{
     height:380px;
     width:100%;
 }
 
 .article-blurb{
-    width: 90%;
-    margin-left: 5%;
+    margin:auto;
+    width: 70%;
+}
+
+.article-title{
+    font-size:24px;
+    font-weight: lighter;
+
 }
 
 .article-icon{
@@ -136,4 +149,34 @@ img{
             margin-right:0px;
             margin-top:-5px;
         }
+    }
+        @media screen and (max-width: 350px) {
+            #articles-container{
+                margin:auto;
+            }
+            .article-card{
+                width:40%;
+                height:400px;
+              
+            }
+            img{
+                height:240px;
+            }
+            .article-blurb{
+                width: 99%;
+                /* margin-left: 5%; */
+            }
+            .date{
+                margin-top:0px;
+            }
+            
+            .article-title{
+               
+                font-size: 18px;
+                width: 92%;
+                margin-bottom: -10px;
+                margin-left:0px;
+                margin-right:0px;
+                margin-top:-5px;
+            }
       }

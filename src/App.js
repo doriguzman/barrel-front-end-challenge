@@ -127,9 +127,9 @@ class App extends Component {
               </div>
             </div>
 
-            <div id="splash-page-bourbon-bottle">
+            <div id="splash-page-bourbon-bottle-container">
               <img
-                id="splash-resize-bottle"
+                id="splash-bourbon-bottle"
                 src={require("./assets/images/www.knobcreek.com-1310894113736742.png")}
               />
             </div>
@@ -138,18 +138,18 @@ class App extends Component {
           {/* bottom splash  DIV  */}
 
           <div id="bottom-splash"> 
-          <div id='splash-pour-mug'>
-            <img id="pour-mug" src={require("./assets/images/pour-mug.jpg")} />
+          <div id='bottom-splash-image-container'>
+            <img id="bottom-splash-image" src={require("./assets/images/pour-mug.jpg")} />
             </div>
-            <div id="pour-mug-text">
+            <div id="bottom-splash-text">
               <img
-                className="pour-mug-article-icon"
+                className="bottom-splash-article-icon"
                 src={require("./assets/images/icons/Article.svg")}
               />
 
-              <p className="article-date"> NOVEMBER 20 </p>
-              <div id="article-main-content">
-                <div className="article-title">
+              <p id="bottom-splash-article-date"> NOVEMBER 20 </p>
+              {/* <div id="article-main-content"> */}
+                <div className="bottom-splash-article-title">
                   {" "}
                   Too Much Flavor For Four  Walls To Hold
                 </div>
@@ -161,7 +161,7 @@ class App extends Component {
 
                 <label className="article-readmore"> Read More </label>
               </div>
-            </div>
+            {/* </div> */}
           </div>
         </div>
 

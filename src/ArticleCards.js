@@ -11,8 +11,7 @@ class ArticleCards extends Component {
        
        {articles.map(article =>{
            {console.log(article.title)}
-        //    let image= article.image
-        //    console.log(article.image)
+        
            return (
                <div key={article.number} className= 'article-card'>
 
