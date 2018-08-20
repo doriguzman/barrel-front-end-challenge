@@ -117,18 +117,14 @@ class App extends Component {
         <div id="splash-page-container">
           <div id="splash-page">
             <div id="splash-page-bio">
-              <p id="bio-header">Maple Never Tasted So Good </p>
-              <p id="bio-blurb">
+              <div id="bio-header">Maple Never Tasted So Good </div>
+              <div id="bio-blurb">
                 {" "}
-                We blend this bourbon with natural smoked maple flavors for
-                <br /> a unique, smoky sweetness. Full Bodied, inviting maple
-                notes
-                <br /> that life to smoke and are complemented with rich vanilla
-                <br />
-                caramel. Smoked hickory and maple work with hints of
-                <br />
-                earthy grains.
-              </p>
+                We blend this bourbon with natural smoked maple flavors for a
+                unique, smoky sweetness. Full Bodied, inviting maple notes that
+                life to smoke and are complemented with rich vanilla caramel.
+                Smoked hickory and maple work with hints of earthy grains.
+              </div>
             </div>
 
             <div id="splash-page-bourbon-bottle">
@@ -150,20 +146,20 @@ class App extends Component {
                 src={require("./assets/images/icons/Article.svg")}
               />
 
-              <p className="date"> NOVEMBER 20 </p>
-              <p className="article-title">
-                {" "}
-                Too Much Flavor For Four <br /> Walls To Hold
-              </p>
-              <p className="article-blurb">
-                There are only so many hours in a day, so we make every
-                <br /> glass count. We craft full-flavored whiskey for those who
-                find
-                <br /> a way to get the most out of every minute of every day
-                ...
-              </p>
+              <p className="article-date"> NOVEMBER 20 </p>
+              <div id="article-main-content">
+                <p className="article-title">
+                  {" "}
+                  Too Much Flavor For Four <br /> Walls To Hold
+                </p>
+                <div id="article-blurb">
+                  There are only so many hours in a day, so we make every glass
+                  count. We craft full-flavored whiskey for those who find a way
+                  to get the most out of every minute of every day ...
+                </div>
 
-              <label className="article-readmore"> Read More </label>
+                <label className="article-readmore"> Read More </label>
+              </div>
             </div>
           </div>
         </div>
@@ -174,22 +170,22 @@ class App extends Component {
           <ArticleCards articles={obj} />
         </div>
 
-        <div id='footer'>
-      <div id='footer-social' >
-     <div id='shareon'> SHARE ON </div>
-   <div id='footer-social-icons'>
-   {" "}
-            <img
-              className="fab fa-facebook-f fa-2x"
-              src={require("./assets/images/logos/facebook-f-brands.svg")}
-            />
-            <img
-              className="fab fa-twitter fa-2x"
-              src={require("./assets/images/logos/twitter-brands.svg")}
-            />{" "}
-    </div>
-      </div>
- <img
+        <div id="footer">
+          <div id="footer-social">
+            <div id="shareon"> SHARE ON </div>
+            <div id="footer-social-icons">
+              {" "}
+              <img
+                className="fab fa-facebook-f fa-2x"
+                src={require("./assets/images/logos/facebook-f-brands.svg")}
+              />
+              <img
+                className="fab fa-twitter fa-2x"
+                src={require("./assets/images/logos/twitter-brands.svg")}
+              />{" "}
+            </div>
+          </div>
+          <img
             className="knob-creek-icon"
             src={require("./assets/images/logos/knobcreek.svg")}
           />

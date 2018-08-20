@@ -1,55 +1,60 @@
-
-.main-div{
-  /* opacity:0.8; */
-  background-color:#ccc;
-  /* position:fixed; */
-  /* width:100%; */
-  /* height:100%; */
-  top:0px;
-  left:0px;
-  z-index:1000;
-  font-family:'Open Sans', sans-serif;
+body {
+  background-color: #1e1e1e;
+  width: 100%;
 }
-
+.main-div {
+  /* opacity:0.8; */
+  background-color: #ccc;
+  /* position:fixed; */
+  width: 100%;
+  /* height:100%; */
+  /* top:0px;
+  left:0px;
+  z-index:1000; */
+  font-family: "Open Sans", sans-serif;
+}
 
 #sponsored {
-  width:100%;
-  height:22px;
+  /* width:100%;
+  height:22px; */
   text-align: center;
-  background: #B5A484;
-
+  background: #b5a484;
 }
 
-#header, #footer{
-  margin-left:0px;
+#header,
+#footer {
+  margin-left: 0px;
   /* width:100%; */
-  height:50px;
-  padding-top:20px;
-  padding-bottom:12px;
-  padding-left:30px;
+  height: 45px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 30px;
   padding-right: 40px;
-  background: black;
+  background: #1e1e1e;
   display: flex;
   justify-content: space-between;
-  align-items:center;
-  color: #B5A484
+  align-items: center;
+  color: #b5a484;
+  font-size: 14px;
 }
-.knob-creek-icon{
-  height:40px;
-  width:100px
-}
-
-#header-center-logo{
-  color:#B5A484;
-  border:2px solid;
-  padding:10px;
-  padding-left:25px;
-  padding-right:25px;
-  
+.knob-creek-icon {
+  height: 40px;
+  width: 100px;
 }
 
-#header-social-media-icon{
-  color:#B5A484;
+#header-center-logo {
+  color: #b5a484;
+  border: 2px solid;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#header-social-media-icon {
+  color: #b5a484;
+}
+#header-social-media-icon:hover {
+  color: white;
 }
 
 .fa-2x {
@@ -57,145 +62,277 @@
   padding-left: 20px;
 }
 
-#splash-page-container{
-  width:100%;
-  height:1260px;
-  background-image: url('./assets/images/www.knobcreek.com-1293609732325191.jpg');
-  background-size: 100% auto;
+#splash-page-container {
+  width: 100%;
+  height: 135vh;
+  background-image: url("./assets/images/www.knobcreek.com-1293609732325191.jpg");
+  background-size: 100%, auto;
+  /* background-clip: padding-box; */
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
-  background-color: #B5A484;
-
-
-
-}
-#splash-page{
-    padding: 50px;
-    padding-left: 12%;
-    padding-right: 12%;
-    width: 70%;
-    /* height: 500px; */
-    display:flex;
-    flex-wrap: wrap;
+  background-color: #b5a484;
 }
 
-#splash-page-bio{
-  color:white;
+#splash-page {
+  padding: 20px;
+  padding-left: 12.5%;
+  padding-right: 12%;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#splash-page-bio {
+  color: white;
   width: 60%;
   height: 75%;
-  padding:0;
-  margin-top:35px;
-  float: left;
-
 }
-#bio-header{
-  font-size: 72px;
-  padding-bottom:0px;
-  margin-bottom:0px;
+#bio-header {
+  padding-top: 90px;
+  /* font-size: 5vw; */
+  font-size: 70px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  line-height: 1em;
+  margin-left: 16px;
 }
-#bio-blurb{
-  font-size:16px;
- font-weight: 300;
- margin-top:0px;
-
+#bio-blurb {
+  width: 71%;
+  /* font-size: 1.15vw; */
+  font-size: 16px;
+  font-weight: 200;
+  /* font-style: italic; */
+  line-height: 1.8em;
+  margin-top: 0px;
+  margin-left: 21px;
+  font-stretch: ultra-expanded;
 }
 
-#splash-page-bourbon-bottle{
+#splash-page-bourbon-bottle {
   width: 40%;
   z-index: 1;
 }
 
-#splash-resize-bottle{
-  width: 420px;
-  height: 720px;
-  margin-top: 12%;
-  margin-left: 17%;
+#splash-resize-bottle {
+  overflow: hidden;
+  width: 104%;
+  height: 78vh;
+  margin-top: 22%;
+  margin-left: 15%;
 }
 
-#bottom-splash{
-  margin-top: -20%;
+#bottom-splash {
+  /* margin-top: -20%; */
+  margin-top: -17.2vw;
   padding-left: 5%;
   padding-right: 5%;
-  width: 90%;
-  height: 100%;
-  display:flex;
+  width: 92%;
+  /* height: 100%; */
+  display: flex;
   flex-wrap: wrap;
 }
 
-#pour-mug{
-  margin-top: -77px;
+#pour-mug {
   width: 45%;
-  height: 685px;
+  height: 66vh;
   position: absolute;
-  clip: rect(78px, 1600px, 1700px, 0px);
 }
 
-#pour-mug-text{
-position:relative;
-margin-top:1px;
-background-color: white;
-color:black;
-height:607px;
-width:49%;
-text-align: center;
-z-index: 2;
-margin-left: 50%;
-
-}
-
-.pour-mug-article-icon{
-  width:35px;
-  height:35px;
-  color: #932525;
-  margin-top:25%;
-
-}
-
-.date{
-margin-top:5px;
-font-size: 13px;
-letter-spacing: 2px;
-font-weight: bold;
-margin-bottom: 10px;
-
-}
-
-.article-title{
-  font-size: 28px;
-  margin-top:0px;
-  margin-bottom:0px;
-
-}
-
-.article-blurb{
-  font-size:16px;
-  font-weight:lighter;
-  padding-bottom:5px;
-
-}
-.article-readmore{
-  color:#BD3131;
-  margin-top:10px;
-  font-size:14px;
-font-weight: 600
-}
-
-#recent-articles-container{
-  width:100%;
+#pour-mug-text {
+  position: relative;
+  margin-top: 1px;
   background-color: white;
-  margin-top:-10px;
-  padding:50px;
-  text-align:center;
-
+  color: black;
+  height: 66vh;
+  width: 48%;
+  text-align: center;
+  z-index: 2;
+  margin-left: 47%;
+  align-content: center;
 }
-#recent-articles-heading{
-  font-size:35px;
+
+.pour-mug-article-icon {
+  width: 35px;
+  height: 35px;
+  color: #932525;
+  margin-top: 22%;
+}
+
+.article-date {
+  margin-bottom: -15px;
+}
+
+.date {
+  margin-top: 5px;
+  /* font-size: 13px; */
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#article-main-content {
+  margin-left: 40px;
+}
+
+.article-title {
+  width: 92%;
+  font-size: 28px;
+  text-align: center;
+  /* margin-left: 20px; */
+  /* font-size:2vw; */
+}
+
+#article-blurb {
+  /* font-size:16px; */
+  /* font-size:1.15vw; */
+  margin-top: -20px;
+  width: 75%;
+  font-size: 16px;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  margin-left: 12%;
+}
+.article-readmore {
+  color: #bd3131;
+  margin-top: 10px;
+  margin-left: -25px;
+  font-size: 16px;
+  /* font-size: 1vw; */
+  font-weight: 700;
+}
+
+#recent-articles-container {
+  width: 100%;
+  background-color: white;
+  margin-top: -10px;
+  padding-bottom: 50px;
+  /* padding-left:50px; */
+  text-align: center;
+}
+#recent-articles-heading {
+  font-size: 35px;
   margin: 10px;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
-#footer-social{
-  display:flex;
+#footer-social {
+  display: flex;
   flex-wrap: wrap;
 
   /* justify-content:  */
+}
+#footer-social:hover {
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-div {
+    width: 100%;
+  }
+  #splash-page-container {
+    background-size: 112% auto;
+    height: 105vh;
+  }
+  #splash-page-bio {
+    color: white;
+    width: 70%;
+    height: 75%;
+    margin-top: 12px;
+    margin-left: -8%;
+  }
+  #bio-header {
+    font-size: 60px;
+    line-height: 1.1em;
+  }
+  #bio-blurb {
+    width: 91%;
+  }
+  #splash-page-bourbon-bottle {
+    width: 38%;
+  }
+
+  #splash-resize-bottle {
+    height: 55vh;
+    width: 31.5vh;
+    margin-top: 25%;
+    margin-left: 7%;
+  }
+  #bottom-splash {
+    margin-top: -14.6vw;
+    margin-left: 17px;
+    width: 90%;
+  }
+  #pour-mug {
+    width: 45%;
+    height: 44vh;
+    position: absolute;
+  }
+
+  #pour-mug-text {
+    height: 44vh;
+  }
+
+  .article-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  #article-blurb {
+    width: 85%;
+    /* font-size:16px; */
+    /* font-size:1.15vw; */
+    margin-top: 10px;
+
+    font-size: 15px;
+    font-weight: lighter;
+    /* padding-bottom:20px; */
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-div {
+    width: 100%;
+  }
+  #splash-page-container {
+    width: 100%;
+    height: 135vh;
+    background-image: url("./assets/images/www.knobcreek.com-1293609732325191.jpg");
+    background-size: 180%,auto;
+    background-repeat: no-repeat;
+    background-color: #b5a484;
+    background-position: -250px 0px;
+  }
+  #splash-page {
+    padding: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #splash-page-bio {
+    color: white;
+    width: 100%;
+    height: 75%;
+    margin-left: 0%;
+
+  }
+  #bio-header {
+    width:50%;
+    padding-top: 25px;
+    /* font-size: 5vw; */
+    font-size: 35px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    line-height: 1em;
+    margin-left: 28%;
+    text-align: center;
+}
+#bio-blurb {
+  width: 80%;
+  font-size:14px;
+}
 }

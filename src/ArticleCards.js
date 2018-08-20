@@ -32,7 +32,7 @@ class ArticleCards extends Component {
 
     <div className='article-blurb'>
                     <p className="date"> {article.date} </p>
-                <p className="article-title"> {article.title}</p>
+                <div className="article-title"> {article.title}</div>
                 <br/>
                 <label className="article-readmore"> {article.continue} </label>
                 </div>
