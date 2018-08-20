@@ -137,9 +137,10 @@ class App extends Component {
 
           {/* bottom splash  DIV  */}
 
-          <div id="bottom-splash">
+          <div id="bottom-splash"> 
+          <div id='splash-pour-mug'>
             <img id="pour-mug" src={require("./assets/images/pour-mug.jpg")} />
-
+            </div>
             <div id="pour-mug-text">
               <img
                 className="pour-mug-article-icon"
@@ -148,10 +149,10 @@ class App extends Component {
 
               <p className="article-date"> NOVEMBER 20 </p>
               <div id="article-main-content">
-                <p className="article-title">
+                <div className="article-title">
                   {" "}
-                  Too Much Flavor For Four <br /> Walls To Hold
-                </p>
+                  Too Much Flavor For Four  Walls To Hold
+                </div>
                 <div id="article-blurb">
                   There are only so many hours in a day, so we make every glass
                   count. We craft full-flavored whiskey for those who find a way
