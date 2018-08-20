@@ -1,22 +1,13 @@
 body {
   background-color: #1e1e1e;
   width: 100%;
-}
-.main-div {
-  /* opacity:0.8; */
   background-color: #ccc;
-  /* position:fixed; */
   width: 100%;
-  /* height:100%; */
-  /* top:0px;
-  left:0px;
-  z-index:1000; */
   font-family: "Open Sans", sans-serif;
 }
 
+
 #sponsored {
-  /* width:100%;
-  height:22px; */
   text-align: center;
   background: #b5a484;
 }
@@ -64,7 +55,7 @@ body {
 
 #splash-page-container {
   width: 100%;
-  height: 140vh;
+  height: 145vh;
   background-image: url("./assets/images/www.knobcreek.com-1293609732325191.jpg");
   background-size: 103%, auto;
   background-repeat: no-repeat;
@@ -73,7 +64,7 @@ body {
 
 #splash-page {
   margin: auto;
-  padding-top: 100px;
+  padding-top: 115px;
   width: 70%;
   display: flex;
   flex-wrap: wrap;
@@ -82,18 +73,16 @@ body {
 #splash-page-bio {
   position: sticky;
   color: white;
-  width: 60%;
+  width: 55%;
   height: 50%;
 }
 #bio-header {
   padding-top: 90px;
-  /* font-size: 5vw; */
   font-size: 70px;
   line-height: 1em;
 }
 #bio-blurb {
   width: 73%;
-  /* font-size: 1.15vw; */
   font-size: 16px;
   font-weight: 200;
   line-height: 1.8em;
@@ -115,9 +104,7 @@ body {
 }
 
 #bottom-splash {
-  /* margin-top: -17.2vw;
-  padding-left: 5%;
-  padding-right: 5%; */
+
   margin:auto;
   margin-top:-17vw;
   width: 88%;
@@ -125,9 +112,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* #bottom-splash-image-container{
-  width: 70%;
-} */
 
 #bottom-splash-image {
   width: 47%;
@@ -136,7 +120,6 @@ body {
 }
 
 #bottom-splash-text {
-  /* position: relative; */
   background-color: white;
   color: black;
   height: 65vh;
@@ -160,9 +143,7 @@ body {
   font-size:14px;
   padding:7px;
   letter-spacing: 2px;
-  
 }
-
 
 .bottom-splash-article-title {
   margin:auto;
@@ -211,38 +192,70 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 1000px) {
-  .main-div {
-    width: 100%;
-  }
-  #splash-page-container {
-    background-size: 112% auto;
-    height: 105vh;
-  }
-  #splash-page-bio {
-    color: white;
-    width: 70%;
-    height: 75%;
-    margin-top: 12px;
-    margin-left: -8%;
-  }
-  #bio-header {
-    font-size: 60px;
-    line-height: 1.1em;
-  }
-  #bio-blurb {
-    width: 91%;
-  }
-  #splash-page-bourbon-bottle {
-    width: 38%;
+
+@media screen and (max-width:1000px){
+  #splash-page-container{
+    background-size: 110%, auto;
+    height: 67vh;
   }
 
-  #splash-resize-bottle {
-    height: 55vh;
-    width: 31.5vh;
-    margin-top: 25%;
-    margin-left: 7%;
+  #splash-page{
+    padding-top:50px;
+    width:90%
   }
+
+  #bio-header{
+    
+    font-size:60px;
+    font-weight: lighter;
+  }
+
+  #bio-blurb{
+    width:95%;
+  }
+
+
+  #splash-page-bourbon-bottle-container {
+    width: 40%;
+    margin-top:15px;
+
+  }
+  
+  #splash-bourbon-bottle {
+    width: 95%;
+    margin:auto;
+  }
+
+  #bottom-splash {
+    margin-top: -14vw;
+  }
+
+  #bottom-splash-image, #bottom-splash-text {
+    height: 28vh;
+  }
+
+  #bottom-splash-text {
+    margin-left: 50%;
+  }
+
+  .bottom-splash-article-icon {
+    margin-top: 18%;
+  }
+  #bottom-splash-article-date{
+    font-size:13px;
+  }
+  .bottom-splash-article-title {
+    font-size:21px;
+    width:70%;
+  }
+
+  #article-blurb, .article-readmore{
+    font-size:15px;
+  }
+}
+/* @media screen and (max-width: 1000px) {
+
+
   #bottom-splash {
     margin-top: -14.6vw;
     margin-left: 17px;
@@ -263,16 +276,13 @@ body {
     text-align: center;
     margin-bottom: 0px;
   }
+
   #article-blurb {
     width: 85%;
-    /* font-size:16px; */
-    /* font-size:1.15vw; */
-    margin-top: 10px;
-
+  margin-top: 10px;
     font-size: 15px;
     font-weight: lighter;
-    /* padding-bottom:20px; */
-    margin-left: 5%;
+ margin-left: 5%;
   }
 }
 
@@ -307,7 +317,6 @@ body {
   #bio-header {
     width: 50%;
     padding-top: 25px;
-    /* font-size: 5vw; */
     font-size: 35px;
     padding-bottom: 20px;
     margin-bottom: 0px;
@@ -381,7 +390,6 @@ body {
   margin-top: 10px;
   font-size: 14px;
   font-weight: lighter;
-  /* padding-bottom: 20px; */
   margin-left: 5%;
 }
 .article-readmore{
@@ -405,10 +413,8 @@ body {
   #bio-header {
     width: 80%;
     padding-top: 0px;
-    /* font-size: 5vw; */
     font-size: 35px;
     padding-bottom: 10px;
-    /* margin-bottom: 0px; */
     line-height: 1em;
     margin: auto;
     text-align: center;
@@ -459,5 +465,5 @@ body {
   margin-bottom: 0px;
   margin-top:20px;
 }
-}
+} */
 

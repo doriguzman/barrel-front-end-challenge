@@ -17,6 +17,11 @@
    color:white
 }
 
+
+img{
+    height:380px;
+    width:100%;
+}
 .date {
     margin-top: 5px;
     font-size: 14px;
@@ -24,14 +29,10 @@
     font-weight: bold;
   }
 
-img{
-    height:380px;
-    width:100%;
-}
-
 .article-blurb{
     margin:auto;
     width: 70%;
+    align-content: center;
 }
 
 .article-title{
@@ -80,44 +81,38 @@ img{
 }
 
 @media screen and (max-width:1000px){
-    #articles-container{
-        margin-left:5px;
-        margin-right:5px;
-    }
-    .article-card{
-        width:29%;
-        height:450px;
-        margin:10px;
-        background-color: #F3F1ED
-    }
-    .article-card:hover{
-       background-color:  #1E1E1E;;
-       color:white
-    }
     
-    img{
-        height:270px;
-        width:100%;
+
+    .article-card{
+        height:440px;
+        margin:10px;
     }
+  
+    img{
+        height:280px;
+    }
+
+    .date {
+        margin-top: 0px;
+       
+      }
+
     .article-blurb{
-        width: 99%;
-        /* margin-left: 5%; */
+        width: 75%;
+       
     }
     .article-readmore{
-        color:#BD3131;
-        margin-top:-100px;
-        margin-left:-25px;
-        font-size:16px;
-        /* font-size: 1vw; */
-        font-weight: 700
+        font-size:15px;
+
       }
       .article-title{
           font-size:18px;
-          width:85%;
-          margin-left:12px;
-          margin-right:10px;
-          margin-bottom:-5px;
+          margin-top:-5px;
+          margin-bottom:-10px;
       }
+
+
+
     }
       @media screen and (max-width: 600px) {
         #articles-container{
