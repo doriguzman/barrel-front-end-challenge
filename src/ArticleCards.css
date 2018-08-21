@@ -110,7 +110,17 @@ img{
           margin-bottom:-10px;
       }
 
+    }
 
+
+    @media screen and (max-width: 900px) {
+        .article-blurb{
+            width: 93%;
+        }
+        .article-card{
+            width:40%;
+            height:450px;
+        }
 
     }
       @media screen and (max-width: 600px) {
@@ -118,7 +128,6 @@ img{
         .article-card{
             width:40%;
             height:380px;
-          
         }
 
         img{
@@ -171,7 +180,7 @@ img{
             }
       }
 
-      @media screen and (max-width: 300px){
+      @media screen and (max-width: 400px){
         .article-card{
             width:80%;
             height:380px;

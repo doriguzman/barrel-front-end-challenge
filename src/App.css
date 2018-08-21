@@ -124,6 +124,7 @@ body {
   z-index: 2;
   margin-left: 52%;
   align-content: center;
+  overflow: scroll;
 }
 
 .bottom-splash-article-icon {
@@ -190,7 +191,7 @@ body {
 @media screen and (max-width: 1000px) {
   #splash-page-container {
     background-size: 110%, auto;
-    height: 67vh;
+    height: 117vh;
   }
 
   #splash-page {
@@ -223,7 +224,7 @@ body {
 
   #bottom-splash-image,
   #bottom-splash-text {
-    height: 28vh;
+    height:50vh;
   }
 
   #bottom-splash-text {
@@ -245,6 +246,118 @@ body {
   .article-readmore {
     font-size: 15px;
   }
+}
+
+
+@media screen and (max-width: 900px) {
+  #splash-page-container {
+    background-size: 100%, auto;
+    /* background-position: -00px 0px; */
+    height: 98vh;
+  }
+
+
+  #splash-page-bio {
+    color: white;
+    width: 50%;
+   
+  }
+  #bio-header {
+    width:80%;
+    padding-top: 20px;
+    font-size: 35px;
+    line-height: 1.1em;
+    margin: auto;
+    text-align: center;
+  }
+
+  #bio-blurb {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+
+  }
+  #bottom-splash {
+    margin-top: -14vw;
+  }
+
+  #bottom-splash-image {
+    width: 45%;
+    height: 40vh;
+    position: absolute;
+  }
+  
+  #bottom-splash-text {
+    background-color: white;
+    color: black;
+    height: 40vh;
+    width: 45%;
+    text-align: center;
+    z-index: 2;
+    margin-left: 48%;
+    align-content: center;
+    overflow: scroll;
+  }
+
+  .bottom-splash-article-icon {
+    width: 30px;
+    height:30px;
+    margin-top: 12%;
+  }
+  
+  #bottom-splash-article-date {
+    margin: auto;
+    font-size: 11px;
+    padding: 7px;
+    letter-spacing: 2px;
+  }
+  
+  .bottom-splash-article-title {
+    width: 80%;
+    font-size: 21px;
+  }
+  
+  #article-blurb {
+    width: 77%;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 1.7em;
+  }
+  
+  .article-readmore {
+    font-size: 13px;
+  }
+  #related-articles-heading {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  #splash-page-container {
+    
+    height: 92vh;
+  }
+
+  #bio-header {
+    width:100%;
+  }
+
+  #bio-blurb {
+    font-size: 14px;
+
+  }
+
+  #bottom-splash-image,#bottom-splash-text{
+    height: 43vh;
+    width: 49%;
+
+  }
+  
+   
+
 }
 
 @media screen and (max-width: 600px) {
@@ -295,7 +408,7 @@ body {
     /* margin-top: -36vw;
     margin-left: 17px; */
     /* margin:auto; */
-    margin-top: -34vw;
+    margin-top: -35vw;
     width: 88%;
     display: flex;
     flex-wrap: wrap;
@@ -356,9 +469,32 @@ body {
     font-size: 21px;
   }
 }
+/* @media screen and (max-width: 561px) { */
+/* 
+  #splash-page-bourbon-bottle-container {
+    margin-top:8px;
+  }
+  
+  #splash-bourbon-bottle {
+    height: 52vh;
+    width: 34vh;
+    padding-top: 5px;
+    margin: auto;
+    position: relative;
+  }
+
+  #bottom-splash{
+    margin-top:-35vw;
+    width:85%;
+  }
+
+} */
 
 
-@media screen and (max-width: 350px) {
+
+
+
+@media screen and (max-width: 450px) {
   
   #sponsored{
     height:20px;
@@ -403,9 +539,10 @@ body {
 }
 
 #splash-page-container {
-  height:167vh;
-  background-size: 325%, auto;
+  height:150vh;
+  background-size: 275%, auto;
   background-position: -345px -10px;
+  position: relative
 }
 
 #bio-header{
@@ -422,14 +559,16 @@ body {
 }
 #splash-page-bourbon-bottle-container {
   margin-top:8px;
-  width: 65%;
+  width: 55%;
 }
 
 #splash-bourbon-bottle {
   height: 52vh;
-  width: 32vh;
+  width: 31vh;
   padding-top: 5px;
   margin: auto;
+  position: relative;
+  /* margin-right:px; */
 }
 
 #bottom-splash-image-container{
@@ -437,12 +576,12 @@ body {
 }
 
 #bottom-splash{
-  margin-top:-35vw;
+  margin-top:-36vw;
   width:85%;
 }
 #bottom-splash-text {
   width: 100%;
-  height: 47vh;
+  height: 45vh;
   margin-left: 0px;
 }
 
@@ -484,5 +623,32 @@ body {
   /* padding-left:50px; */
   text-align: center;
 }
+
+}
+
+@media screen and (max-width: 360px) {
+  #splash-page-container {
+    height:155vh;
+    background-size: 325%, auto;
+    background-position: -345px -10px;
+    position: relative
+  }
+  #splash-page-bourbon-bottle-container {
+    margin-top:8px;
+    width: 65%;
+  }
+  
+  #splash-bourbon-bottle {
+    height: 52vh;
+    width: 31vh;
+    padding-top: 5px;
+    margin: auto;
+    position: relative;
+    /* margin-right:px; */
+  }
+  #bottom-splash{
+    margin-top:-38vw;
+    width:85%;
+  }
 
 }
