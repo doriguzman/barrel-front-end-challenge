@@ -1,28 +1,783 @@
-.App {
+body {
+  background-color: #1e1e1e;
+  width: 100%;
+  background-color: #ccc;
+  font-family: "Open Sans", sans-serif;
+}
+
+#sponsored {
   text-align: center;
+  background: #b5a484;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#header,
+#footer {
+  margin-left: 0px;
+  /* width:100%; */
+  height: 45px;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 40px;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b5a484;
+  font-size: 14px;
+}
+.knob-creek-icon {
+  height: 40px;
+  width: 100px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+#header-center-logo {
+  color: #b5a484;
+  border: 2px solid;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#header-social-media-icon {
+  color: #b5a484;
+}
+#header-social-media-icon:hover {
   color: white;
 }
 
-.App-title {
+.fa-2x {
   font-size: 1.5em;
+  padding-left: 20px;
 }
 
-.App-intro {
-  font-size: large;
+#splash-page-container {
+  width: 100%;
+  height: 145vh;
+  background-image: url("./assets/images/www.knobcreek.com-1293609732325191.jpg");
+  background-size: 103%, auto;
+  background-repeat: no-repeat;
+  background-color: #b5a484;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#splash-page {
+  margin: auto;
+  padding-top: 115px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#splash-page-bio {
+  position: sticky;
+  color: white;
+  width: 55%;
+  height: 50%;
+}
+#bio-header {
+  padding-top: 90px;
+  font-size: 70px;
+  line-height: 1em;
+}
+#bio-blurb {
+  width: 73%;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.8em;
+  font-stretch: ultra-expanded;
+  margin-top: 20px;
+}
+
+#splash-page-bourbon-bottle-container {
+  width: 40%;
+  z-index: 1;
+  margin: auto;
+}
+
+#splash-bourbon-bottle {
+  width: 110%;
+  height: 100%;
+  margin-left: 15%;
+  /* margin:auto; */
+}
+
+#bottom-splash {
+  margin: auto;
+  margin-top: -17vw;
+  width: 88%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#bottom-splash-image {
+  width: 47%;
+  height: 65vh;
+  position: absolute;
+}
+
+#bottom-splash-text {
+  background-color: white;
+  color: black;
+  height: 65vh;
+  width: 47%;
+  text-align: center;
+  z-index: 2;
+  margin-left: 52%;
+  align-content: center;
+  overflow: scroll;
+}
+
+.bottom-splash-article-icon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  color: #932525;
+  margin-top: 25%;
+}
+
+#bottom-splash-article-date {
+  margin: auto;
+  font-size: 14px;
+  padding: 7px;
+  letter-spacing: 2px;
+}
+
+.bottom-splash-article-title {
+  margin: auto;
+  width: 60%;
+  font-size: 28px;
+  text-align: center;
+}
+
+#article-blurb {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.7em;
+}
+
+.article-readmore {
+  color: #bd3131;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#related-articles-container {
+  width: 100%;
+  background-color: white;
+  margin-top: -10px;
+  padding-bottom: 50px;
+  /* padding-left:50px; */
+  text-align: center;
+}
+#related-articles-heading {
+  font-size: 35px;
+  margin: 10px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+#footer-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer-social:hover {
+  color: white;
+}
+
+
+@media screen and (max-width: 1500px) {
+
+  #bio-header {
+    padding-top: 45px;
+  }
+ 
+
+  #bio-blurb {
+    width: 95%;
+  }
+
+}
+
+@media screen and (max-width: 1340px) {
+  #splash-page-container {
+    height: 143vh;
+    
+  }
+
+  #splash-page {
+    margin: auto;
+    margin-left:10% ;
+    margin-right:10%;
+    padding-top: 115px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #splash-bourbon-bottle {
+    width: 100%;
+    margin-left: 5%;
+    /* margin:auto; */
+  }
+
+}
+
+@media screen and (max-width: 1170px) {
+   /* #splash-page-bio {
+    position: sticky;
+    color: white;
+    width: 59%;
+    height: 50%;
+  } */
+  /* #splash-page {
+    margin: auto;
+    padding-top: 115px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  
+  /* #splash-page-bio {
+    position: sticky;
+    color: white;
+    width: 55%;
+    height: 50%;
+  }
+  #bio-header {
+    padding-top: 90px;
+    font-size: 70px;
+    line-height: 1em;
+  } */
+
+}
+@media screen and (max-width: 1000px) {
+  #splash-page-container {
+    background-size: 110%, auto;
+    height: 117vh;
+  }
+
+  #splash-page {
+    padding-top: 50px;
+    width: 90%;
+  }
+
+  #bio-header {
+    font-size: 60px;
+    font-weight: lighter;
+  }
+
+  #bio-blurb {
+    width: 95%;
+  }
+
+  #splash-page-bourbon-bottle-container {
+    width: 40%;
+    margin-top: 15px;
+  }
+
+  #splash-bourbon-bottle {
+    width: 95%;
+    margin: auto;
+  }
+
+  #bottom-splash {
+    margin-top: -14vw;
+  }
+
+  #bottom-splash-image,
+  #bottom-splash-text {
+    height:50vh;
+  }
+
+  #bottom-splash-text {
+    margin-left: 50%;
+  }
+
+  .bottom-splash-article-icon {
+    margin-top: 18%;
+  }
+  #bottom-splash-article-date {
+    font-size: 13px;
+  }
+  .bottom-splash-article-title {
+    font-size: 21px;
+    width: 70%;
+  }
+
+  #article-blurb,
+  .article-readmore {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1190px) {
+
+  #splash-page {
+    padding-top: 50px;
+    width: 90%;
+  }
+
+  #bio-header {
+    font-size: 60px;
+    font-weight: lighter;
+  }
+
+  #bio-blurb {
+    width: 95%;
+  }
+  #splash-bourbon-bottle {
+    width: 100%;
+    margin-left: -10%;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  #splash-page-container {
+    background-size: 100%, auto;
+    /* background-position: -00px 0px; */
+    height: 98vh;
+  }
+
+
+  #splash-page-bio {
+    color: white;
+    width: 50%;
+   
+  }
+  #bio-header {
+    width:80%;
+    padding-top: 20px;
+    font-size: 35px;
+    line-height: 1.1em;
+    margin: auto;
+    text-align: center;
+  }
+
+  #bio-blurb {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+
+  }
+  #bottom-splash {
+    margin-top: -14vw;
+  }
+
+  #bottom-splash-image {
+    width: 45%;
+    height: 40vh;
+    position: absolute;
+  }
+  
+  #bottom-splash-text {
+    background-color: white;
+    color: black;
+    height: 40vh;
+    width: 45%;
+    text-align: center;
+    z-index: 2;
+    margin-left: 48%;
+    align-content: center;
+    overflow: scroll;
+  }
+
+  .bottom-splash-article-icon {
+    width: 30px;
+    height:30px;
+    margin-top: 12%;
+  }
+  
+  #bottom-splash-article-date {
+    margin: auto;
+    font-size: 11px;
+    padding: 7px;
+    letter-spacing: 2px;
+  }
+  
+  .bottom-splash-article-title {
+    width: 80%;
+    font-size: 21px;
+  }
+  
+  #article-blurb {
+    width: 77%;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 1.7em;
+  }
+  
+  .article-readmore {
+    font-size: 13px;
+  }
+  #related-articles-heading {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  #splash-page-container {
+    
+    height: 92vh;
+  }
+
+  #bio-header {
+    width:100%;
+  }
+
+  #bio-blurb {
+    font-size: 14px;
+
+  }
+
+  #bottom-splash-image,#bottom-splash-text{
+    height: 43vh;
+    width: 49%;
+
+  }
+  
+   
+
+}
+
+@media screen and (max-width: 600px) {
+  #splash-page-container {
+    height: 150vh;
+    background-size: 180%, auto;
+    background-position: -250px 0px;
+  }
+  #splash-page {
+    padding: 25px;
+    padding-left: 0%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #splash-page-bio {
+    color: white;
+    width: 100%;
+  }
+  #bio-header {
+    width: 50%;
+    padding-top: 25px;
+    font-size: 35px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    line-height: 1.1em;
+    margin: auto;
+    text-align: center;
+  }
+  #bio-blurb {
+    width: 71%;
+    font-size: 14px;
+    margin: auto;
+    font-weight: lighter;
+  }
+  #splash-page-bourbon-bottle-container {
+    width: 40%;
+  }
+
+  #splash-bourbon-bottle {
+    height: 55vh;
+    width: 36vh;
+    padding-top: 5px;
+    margin: auto;
+  }
+  #bottom-splash {
+    /* margin-top: -36vw;
+    margin-left: 17px; */
+    /* margin:auto; */
+    margin-top: -35vw;
+    width: 88%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #bottom-splash-image-container {
+    width: 100%;
+    height: 31vh;
+    z-index: 2;
+    background-image: url("./assets/images/pour-mug.jpg");
+    background-size: 105%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding-bottom: 14%;
+  }
+
+  #bottom-splash-image {
+    width: 88%;
+    height: 0vh;
+    z-index: 2;
+  }
+
+  #bottom-splash-text {
+    width: 100%;
+    height: 36vh;
+    margin-left: 0px;
+  }
+  .bottom-splash-article-icon {
+   
+    margin-top: 5%;
+    margin-bottom: -15px;
+  }
+
+  
+  #bottom-splash-article-date {
+   
+    padding-top:20px;
+    font-size: 11px;
+}
+  .bottom-splash-article-title{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  #article-blurb {
+    width: 72%;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+
+  .article-readmore{
+    font-size: 14px;
+  }
+ 
+  #related-articles-heading {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #splash-page-container {
+    height: 152vh;
+    background-size: 215%, auto;
+    background-position: -280px 0px;
+  }
+  #splash-page-bourbon-bottle-container {
+    width: 50%;
+  }
+
+  #splash-bourbon-bottle {
+    width: 34vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #splash-page-container {
+    height: 154vh;
+    background-size: 230%, auto;
+    background-position: -320px 0px;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  #splash-page-container {
+    height: 158vh;
+    background-size: 230%, auto;
+    background-position: -320px 0px;
+  }
+
+}
+
+/* 
+  #splash-page-bourbon-bottle-container {
+    margin-top:8px;
+  }
+  
+  #splash-bourbon-bottle {
+    height: 52vh;
+    width: 34vh;
+    padding-top: 5px;
+    margin: auto;
+    position: relative;
+  }
+
+  #bottom-splash{
+    margin-top:-35vw;
+    width:85%;
+  }
+
+} */
+
+
+
+
+
+@media screen and (max-width: 460px) {
+  
+  #sponsored{
+    height:20px;
+    font-size:12px;
+  }
+#header{
+  height:25px;
+  margin:auto;
+  display: flex;
+  padding-left: 0px;
+  padding-right: 20px;
+}
+
+#footer{
+  margin:auto;
+  text-align: center;
+  height:15px;;
+  padding-right: 0px;
+  padding-left:30px;
+}
+
+#shareon{
+  font-size:9px;
+  letter-spacing:1.5px;
+  margin-top:3px;
+
+}
+.knob-creek-icon {
+  height: 28px;
+  width: 100px;
+}
+#header-center-logo {
+  border: 2px solid;
+  font-size:11px;
+  margin-top:-5px;
+  margin-left:-15px;
+  align-content: center;
+}
+.fa-2x {
+  font-size: 1.3em;
+  padding-left: 12px;
+}
+
+#splash-page-container {
+  height:145vh;
+  background-size: 275%, auto;
+  background-position: -345px -10px;
+  position: relative
+}
+
+#bio-header{
+  width:85%;
+  padding-top:10px;
+  font-size: 30px;
+  padding-bottom:8px;
+}
+
+#bio-blurb {
+  width: 79%;
+  font-size: 12.5px;
+  text-align: center
+}
+#splash-page-bourbon-bottle-container {
+  margin-top:8px;
+  width: 55%;
+}
+
+#splash-bourbon-bottle {
+  height: 52vh;
+  width: 31vh;
+  padding-top: 5px;
+  margin: auto;
+  position: relative;
+  /* margin-right:px; */
+}
+
+#bottom-splash-image-container{
+  padding-bottom:5%;
+}
+
+#bottom-splash{
+  margin-top:-36vw;
+  width:85%;
+}
+#bottom-splash-text {
+  width: 100%;
+  height: 43vh;
+  margin-left: 0px;
+}
+
+.bottom-splash-article-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 10%;
+}
+#bottom-splash-article-date {
+   
+  padding-top:15px;
+  font-size: 10px;
+  font-weight: bolder;
+}
+.bottom-splash-article-title{
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#article-blurb {
+  width: 85%;
+  font-size: 13px;
+  font-weight: lighter;
+  padding-bottom:10px;
+}
+.article-readmore{
+  font-size: 13px;
+}
+
+#related-articles-heading {
+  font-size: 17px;
+}
+#related-articles-container {
+  width: 100%;
+  background-color: #1e1e1e;
+  margin-top: -10px;
+  padding-bottom: 50px;
+  /* padding-left:50px; */
+  text-align: center;
+}
+
+}
+@media screen and (max-width: 400px) {
+  #splash-page-container {
+    height:155vh;
+    background-size: 300%, auto;
+    background-position: -345px -10px;
+    position: relative
+  }
+
+
+}
+@media screen and (max-width: 360px) {
+  #splash-page-container {
+    height:155vh;
+    background-size: 325%, auto;
+    background-position: -345px -10px;
+    position: relative
+  }
+  #splash-page-bourbon-bottle-container {
+    margin-top:8px;
+    width: 65%;
+  }
+  
+  #splash-bourbon-bottle {
+    height: 52vh;
+    width: 31vh;
+    padding-top: 5px;
+    margin: auto;
+    position: relative;
+    /* margin-right:px; */
+  }
+  #bottom-splash{
+    margin-top:-38vw;
+    width:85%;
+  }
+  #bottom-splash-image-container{
+    padding-bottom:10px;
+  }
+
 }

@@ -1,0 +1,249 @@
+#articles-container{
+    margin:auto;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.article-card{
+    width:29%;
+    height:585px;
+    margin:15px;
+    background-color: #F3F1ED
+}
+.article-card:hover{
+   background-color:  #1E1E1E;;
+   color:white
+}
+
+
+img{
+    height:380px;
+    width:100%;
+}
+
+.article-icon{
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    margin-top:-30px;
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+    background-color:#F3F1ED;
+}
+
+.article-icon-gallery{
+    width: 35px;
+    height: 15px;
+    color: #932525;
+    border-radius: 800px;
+    margin-top: -30px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+    background-color: #F3F1ED;
+}
+
+.article-icon-glass{
+    width:35px;
+    height:40px;
+    border-radius:500px;
+    margin-top:-30px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border: 2px solid transparent;
+    background-color:#F3F1ED;
+}
+
+.date {
+    margin-top: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+.article-blurb{
+    margin:auto;
+    width: 70%;
+    align-content: center;
+}
+
+.article-title{
+    font-size:24px;
+    font-weight: lighter;
+
+}
+
+@media screen and (max-width: 1190px) {
+    .date {
+        margin-top: 0px;
+        margin-bottom:10px;
+      }
+      .article-blurb{
+        margin:auto;
+        width: 90%;
+        align-content: center;
+    }
+    .article-title{
+        font-size:21px;
+        font-weight: lighter;
+        margin-bottom:0px;
+    
+    }
+}
+
+@media screen and (max-width:1000px){
+    
+
+    .article-card{
+        height:440px;
+        margin:10px;
+    }
+  
+    img{
+        height:280px;
+    }
+
+    .date {
+        margin-top: 0px;
+      }
+
+    .article-blurb{
+        width: 80%;
+       
+    }
+    
+      .article-title{
+          font-size:18px;
+          margin-top:-5px;
+          margin-bottom:-10px;
+      }
+
+    }
+
+
+    @media screen and (max-width: 900px) {
+        .article-blurb{
+            width: 93%;
+        }
+        .article-card{
+            width:40%;
+            height:460px;
+        }
+
+    }
+      @media screen and (max-width: 600px) {
+       
+        .article-card{
+            width:40%;
+            height:390px;
+        }
+
+        img{
+            height:240px;
+        }
+        .date {
+            /* margin: 5px; */
+            font-size:11px;
+          }
+        .article-blurb{
+            width: 93%;
+        }
+       
+        
+        .article-title{
+           margin:auto;
+           margin-top:-5px;
+           margin-bottom:-15px;
+        font-size: 17px;
+            width: 92%;
+        }
+    }
+
+
+    @media screen and (max-width: 560px) {
+
+        .article-title{
+            width: 100%; 
+        }
+    }
+
+    @media screen and (max-width: 490px) {
+        .article-blurb{
+            width: 99%;
+            /* margin-left: 5%; */
+        }
+
+        .article-title{
+            width: 100%; 
+        }
+    }
+        @media screen and (max-width: 350px) {
+            #articles-container{
+                margin:auto;
+            }
+            .article-card{
+                width:40%;
+                height:400px;
+            }
+            img{
+                height:240px;
+            }
+            .article-blurb{
+                width: 99%;
+                /* margin-left: 5%; */
+            }
+            .date{
+                margin-top:0px;
+            }
+            
+            .article-title{
+               
+                font-size: 18px;
+                width: 92%;
+                margin-bottom: -10px;
+                margin-left:0px;
+                margin-right:0px;
+                margin-top:-5px;
+            }
+      }
+
+      @media screen and (max-width: 400px){
+        .article-card{
+            width:80%;
+            height:380px;
+        }
+        img{
+            height:240px;
+        }
+        .article-blurb{
+            width: 99%;
+        }
+        .date{
+            margin-top:0px;
+            font-size:10px;
+        }
+        
+        .article-title{
+           
+            font-size: 16px;
+            width: 90%;
+            text-align: center;
+            margin:auto;
+            margin-bottom:-15px;
+         
+        }
+        .article-icon-gallery{
+            margin-bottom:-2px;
+        }
+
+       
+
+      }
