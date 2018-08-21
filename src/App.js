@@ -137,9 +137,12 @@ class App extends Component {
 
           {/* bottom splash  DIV  */}
 
-          <div id="bottom-splash"> 
-          <div id='bottom-splash-image-container'>
-            <img id="bottom-splash-image" src={require("./assets/images/pour-mug.jpg")} />
+          <div id="bottom-splash">
+            <div id="bottom-splash-image-container">
+              <img
+                id="bottom-splash-image"
+                src={require("./assets/images/pour-mug.jpg")}
+              />
             </div>
             <div id="bottom-splash-text">
               <img
@@ -149,18 +152,18 @@ class App extends Component {
 
               <p id="bottom-splash-article-date"> NOVEMBER 20 </p>
               {/* <div id="article-main-content"> */}
-                <div className="bottom-splash-article-title">
-                  {" "}
-                  Too Much Flavor For Four  Walls To Hold
-                </div>
-                <div id="article-blurb">
-                  There are only so many hours in a day, so we make every glass
-                  count. We craft full-flavored whiskey for those who find a way
-                  to get the most out of every minute of every day ...
-                </div>
-
-                <label className="article-readmore"> Read More </label>
+              <div className="bottom-splash-article-title">
+                {" "}
+                Too Much Flavor For Four Walls To Hold
               </div>
+              <div id="article-blurb">
+                There are only so many hours in a day, so we make every glass
+                count. We craft full-flavored whiskey for those who find a way
+                to get the most out of every minute of every day ...
+              </div>
+
+              <label className="article-readmore"> Read More </label>
+            </div>
             {/* </div> */}
           </div>
         </div>
@@ -171,6 +174,7 @@ class App extends Component {
           <ArticleCards articles={obj} />
         </div>
 
+        {/* footer div */}
         <div id="footer">
           <div id="footer-social">
             <div id="shareon"> SHARE ON </div>
