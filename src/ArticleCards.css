@@ -148,7 +148,6 @@ img{
             .article-card{
                 width:40%;
                 height:400px;
-              
             }
             img{
                 height:240px;
@@ -170,4 +169,37 @@ img{
                 margin-right:0px;
                 margin-top:-5px;
             }
+      }
+
+      @media screen and (max-width: 300px){
+        .article-card{
+            width:80%;
+            height:380px;
+        }
+        img{
+            height:240px;
+        }
+        .article-blurb{
+            width: 99%;
+        }
+        .date{
+            margin-top:0px;
+            font-size:10px;
+        }
+        
+        .article-title{
+           
+            font-size: 16px;
+            width: 90%;
+            text-align: center;
+            margin:auto;
+            margin-bottom:-15px;
+         
+        }
+        .article-icon-gallery{
+            margin-bottom:-2px;
+        }
+
+       
+
       }

@@ -166,8 +166,8 @@ class App extends Component {
         </div>
 
         {/* bottom div */}
-        <div id="recent-articles-container">
-          <p id="recent-articles-heading"> Recent Articles</p>
+        <div id="related-articles-container">
+          <p id="related-articles-heading"> Related Articles</p>
           <ArticleCards articles={obj} />
         </div>
 
