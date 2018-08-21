@@ -81,7 +81,23 @@ img{
 
 }
 
-
+@media screen and (max-width: 1190px) {
+    .date {
+        margin-top: 0px;
+        margin-bottom:10px;
+      }
+      .article-blurb{
+        margin:auto;
+        width: 90%;
+        align-content: center;
+    }
+    .article-title{
+        font-size:21px;
+        font-weight: lighter;
+        margin-bottom:0px;
+    
+    }
+}
 
 @media screen and (max-width:1000px){
     
@@ -100,7 +116,7 @@ img{
       }
 
     .article-blurb{
-        width: 75%;
+        width: 80%;
        
     }
     
@@ -119,7 +135,7 @@ img{
         }
         .article-card{
             width:40%;
-            height:450px;
+            height:460px;
         }
 
     }
@@ -127,7 +143,7 @@ img{
        
         .article-card{
             width:40%;
-            height:380px;
+            height:390px;
         }
 
         img{
@@ -148,6 +164,25 @@ img{
            margin-bottom:-15px;
         font-size: 17px;
             width: 92%;
+        }
+    }
+
+
+    @media screen and (max-width: 560px) {
+
+        .article-title{
+            width: 100%; 
+        }
+    }
+
+    @media screen and (max-width: 490px) {
+        .article-blurb{
+            width: 99%;
+            /* margin-left: 5%; */
+        }
+
+        .article-title{
+            width: 100%; 
         }
     }
         @media screen and (max-width: 350px) {

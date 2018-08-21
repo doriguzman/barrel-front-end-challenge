@@ -188,6 +188,72 @@ body {
   color: white;
 }
 
+
+@media screen and (max-width: 1500px) {
+
+  #bio-header {
+    padding-top: 45px;
+  }
+ 
+
+  #bio-blurb {
+    width: 95%;
+  }
+
+}
+
+@media screen and (max-width: 1340px) {
+  #splash-page-container {
+    height: 143vh;
+    
+  }
+
+  #splash-page {
+    margin: auto;
+    margin-left:10% ;
+    margin-right:10%;
+    padding-top: 115px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #splash-bourbon-bottle {
+    width: 100%;
+    margin-left: 5%;
+    /* margin:auto; */
+  }
+
+}
+
+@media screen and (max-width: 1170px) {
+   /* #splash-page-bio {
+    position: sticky;
+    color: white;
+    width: 59%;
+    height: 50%;
+  } */
+  /* #splash-page {
+    margin: auto;
+    padding-top: 115px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  
+  /* #splash-page-bio {
+    position: sticky;
+    color: white;
+    width: 55%;
+    height: 50%;
+  }
+  #bio-header {
+    padding-top: 90px;
+    font-size: 70px;
+    line-height: 1em;
+  } */
+
+}
 @media screen and (max-width: 1000px) {
   #splash-page-container {
     background-size: 110%, auto;
@@ -245,6 +311,26 @@ body {
   #article-blurb,
   .article-readmore {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 1190px) {
+
+  #splash-page {
+    padding-top: 50px;
+    width: 90%;
+  }
+
+  #bio-header {
+    font-size: 60px;
+    font-weight: lighter;
+  }
+
+  #bio-blurb {
+    width: 95%;
+  }
+  #splash-bourbon-bottle {
+    width: 100%;
+    margin-left: -10%;
   }
 }
 
@@ -469,7 +555,38 @@ body {
     font-size: 21px;
   }
 }
-/* @media screen and (max-width: 561px) { */
+@media screen and (max-width: 575px) {
+  #splash-page-container {
+    height: 152vh;
+    background-size: 215%, auto;
+    background-position: -280px 0px;
+  }
+  #splash-page-bourbon-bottle-container {
+    width: 50%;
+  }
+
+  #splash-bourbon-bottle {
+    width: 34vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #splash-page-container {
+    height: 154vh;
+    background-size: 230%, auto;
+    background-position: -320px 0px;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  #splash-page-container {
+    height: 158vh;
+    background-size: 230%, auto;
+    background-position: -320px 0px;
+  }
+
+}
+
 /* 
   #splash-page-bourbon-bottle-container {
     margin-top:8px;
@@ -494,7 +611,7 @@ body {
 
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
   
   #sponsored{
     height:20px;
@@ -539,7 +656,7 @@ body {
 }
 
 #splash-page-container {
-  height:150vh;
+  height:145vh;
   background-size: 275%, auto;
   background-position: -345px -10px;
   position: relative
@@ -581,7 +698,7 @@ body {
 }
 #bottom-splash-text {
   width: 100%;
-  height: 45vh;
+  height: 43vh;
   margin-left: 0px;
 }
 
@@ -625,7 +742,16 @@ body {
 }
 
 }
+@media screen and (max-width: 400px) {
+  #splash-page-container {
+    height:155vh;
+    background-size: 300%, auto;
+    background-position: -345px -10px;
+    position: relative
+  }
 
+
+}
 @media screen and (max-width: 360px) {
   #splash-page-container {
     height:155vh;
@@ -649,6 +775,9 @@ body {
   #bottom-splash{
     margin-top:-38vw;
     width:85%;
+  }
+  #bottom-splash-image-container{
+    padding-bottom:10px;
   }
 
 }
