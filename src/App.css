@@ -6,7 +6,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
 #sponsored {
   text-align: center;
   background: #b5a484;
@@ -87,13 +86,13 @@ body {
   font-weight: 200;
   line-height: 1.8em;
   font-stretch: ultra-expanded;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 #splash-page-bourbon-bottle-container {
   width: 40%;
   z-index: 1;
-  margin:auto;
+  margin: auto;
 }
 
 #splash-bourbon-bottle {
@@ -104,14 +103,12 @@ body {
 }
 
 #bottom-splash {
-
-  margin:auto;
-  margin-top:-17vw;
+  margin: auto;
+  margin-top: -17vw;
   width: 88%;
   display: flex;
   flex-wrap: wrap;
 }
-
 
 #bottom-splash-image {
   width: 47%;
@@ -131,7 +128,7 @@ body {
 }
 
 .bottom-splash-article-icon {
-  position:relative;
+  position: relative;
   width: 35px;
   height: 35px;
   color: #932525;
@@ -139,24 +136,24 @@ body {
 }
 
 #bottom-splash-article-date {
-  margin:auto;
-  font-size:14px;
-  padding:7px;
+  margin: auto;
+  font-size: 14px;
+  padding: 7px;
   letter-spacing: 2px;
 }
 
 .bottom-splash-article-title {
-  margin:auto;
+  margin: auto;
   width: 60%;
   font-size: 28px;
   text-align: center;
 }
 
 #article-blurb {
-  margin:auto;
+  margin: auto;
   width: 75%;
-  padding:10px;
-  padding-bottom:15px;
+  padding: 10px;
+  padding-bottom: 15px;
   font-size: 16px;
   font-weight: lighter;
   line-height: 1.7em;
@@ -186,51 +183,47 @@ body {
 #footer-social {
   display: flex;
   flex-wrap: wrap;
-
 }
 #footer-social:hover {
   color: white;
 }
 
-
-@media screen and (max-width:1000px){
-  #splash-page-container{
+@media screen and (max-width: 1000px) {
+  #splash-page-container {
     background-size: 110%, auto;
     height: 67vh;
   }
 
-  #splash-page{
-    padding-top:50px;
-    width:90%
+  #splash-page {
+    padding-top: 50px;
+    width: 90%;
   }
 
-  #bio-header{
-    
-    font-size:60px;
+  #bio-header {
+    font-size: 60px;
     font-weight: lighter;
   }
 
-  #bio-blurb{
-    width:95%;
+  #bio-blurb {
+    width: 95%;
   }
-
 
   #splash-page-bourbon-bottle-container {
     width: 40%;
-    margin-top:15px;
-
+    margin-top: 15px;
   }
-  
+
   #splash-bourbon-bottle {
     width: 95%;
-    margin:auto;
+    margin: auto;
   }
 
   #bottom-splash {
     margin-top: -14vw;
   }
 
-  #bottom-splash-image, #bottom-splash-text {
+  #bottom-splash-image,
+  #bottom-splash-text {
     height: 28vh;
   }
 
@@ -241,68 +234,29 @@ body {
   .bottom-splash-article-icon {
     margin-top: 18%;
   }
-  #bottom-splash-article-date{
-    font-size:13px;
+  #bottom-splash-article-date {
+    font-size: 13px;
   }
   .bottom-splash-article-title {
-    font-size:21px;
-    width:70%;
+    font-size: 21px;
+    width: 70%;
   }
 
-  #article-blurb, .article-readmore{
-    font-size:15px;
-  }
-}
-/* @media screen and (max-width: 1000px) {
-
-
-  #bottom-splash {
-    margin-top: -14.6vw;
-    margin-left: 17px;
-    width: 90%;
-  }
-  #pour-mug {
-    width: 45%;
-    height: 44vh;
-    position: absolute;
-  }
-
-  #pour-mug-text {
-    height: 44vh;
-  }
-
-  .article-title {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 0px;
-  }
-
-  #article-blurb {
-    width: 85%;
-  margin-top: 10px;
+  #article-blurb,
+  .article-readmore {
     font-size: 15px;
-    font-weight: lighter;
- margin-left: 5%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .main-div {
-    width: 100%;
-  }
   #splash-page-container {
-    width: 100%;
-    height: 113vh;
-    background-image: url("./assets/images/www.knobcreek.com-1293609732325191.jpg");
+    height: 150vh;
     background-size: 180%, auto;
-    background-repeat: no-repeat;
-    background-color: #b5a484;
     background-position: -250px 0px;
   }
   #splash-page {
-    padding: 20px;
+    padding: 25px;
     padding-left: 0%;
-    padding-right: 0%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -311,8 +265,6 @@ body {
   #splash-page-bio {
     color: white;
     width: 100%;
-    height: 75%;
-    margin-left: 0%;
   }
   #bio-header {
     width: 50%;
@@ -320,7 +272,7 @@ body {
     font-size: 35px;
     padding-bottom: 20px;
     margin-bottom: 0px;
-    line-height: 1em;
+    line-height: 1.1em;
     margin: auto;
     text-align: center;
   }
@@ -328,78 +280,84 @@ body {
     width: 71%;
     font-size: 14px;
     margin: auto;
-    text-align: center;
+    font-weight: lighter;
   }
-  #splash-page-bourbon-bottle {
-    width: 45%;
-    margin:auto;
+  #splash-page-bourbon-bottle-container {
+    width: 40%;
   }
 
-  #splash-resize-bottle {
-    height: 45vh;
-    width: 28vh;
-     padding-top:5%;
-    margin:auto;
+  #splash-bourbon-bottle {
+    height: 55vh;
+    width: 36vh;
+    padding-top: 5px;
+    margin: auto;
   }
   #bottom-splash {
-    margin-top: -36vw;
-    margin-left: 17px;
-    width: 90%;
-    display:flex;
+    /* margin-top: -36vw;
+    margin-left: 17px; */
+    /* margin:auto; */
+    margin-top: -34vw;
+    width: 88%;
+    display: flex;
     flex-wrap: wrap;
+  }
 
+  #bottom-splash-image-container {
+    width: 100%;
+    height: 31vh;
+    z-index: 2;
+    background-image: url("./assets/images/pour-mug.jpg");
+    background-size: 105%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding-bottom: 14%;
   }
-  #splash-pour-mug{
-    width: 95%;
-    height: 32vh;
-  }
-  #pour-mug {
-    width: 85%;
-    height: 32vh;
-    position: absolute;
-    z-index: 2
-  }
-  #pour-mug-text{
-    width:94.5%;
-    height:25vh;
-    margin-left:0px;
 
+  #bottom-splash-image {
+    width: 88%;
+    height: 0vh;
+    z-index: 2;
   }
-  .pour-mug-article-icon {
-    width: 30px;
-    height: 30px;
-    color: #932525;
+
+  #bottom-splash-text {
+    width: 100%;
+    height: 36vh;
+    margin-left: 0px;
+  }
+  .bottom-splash-article-icon {
+   
     margin-top: 5%;
-    margin-bottom:-15px;
-}
+    margin-bottom: -15px;
+  }
 
-#article-main-content{
-  margin-top:20px;
+  
+  #bottom-splash-article-date {
+   
+    padding-top:20px;
+    font-size: 11px;
 }
-.article-date{
-  font-size:12px;
-}
-.article-title {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 0px;
-  margin-top:20px;
-}
-#article-blurb {
-  width: 87%;
-  margin-top: 10px;
-  font-size: 14px;
-  font-weight: lighter;
-  margin-left: 5%;
-}
-.article-readmore{
-  font-size:12px;
-}
-#recent-articles-heading{
-  font-size:18px;
-}
-}
+  .bottom-splash-article-title{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+  #article-blurb {
+    width: 72%;
+    font-size: 14px;
+    font-weight: lighter;
+  }
 
+  .article-readmore{
+    font-size: 14px;
+  }
+ 
+  #recent-articles-heading {
+    font-size: 21px;
+  }
+}
+/* 
 
 @media screen and (max-width: 350px) {
   .main-div {
@@ -466,4 +424,3 @@ body {
   margin-top:20px;
 }
 } */
-
